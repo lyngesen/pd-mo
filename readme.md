@@ -20,6 +20,6 @@ See the file `main.py` on how to call the Pareto Measure. To get the measure $M 
 
 # Some plots
 
-![./figures/test_convexity_0.png]
-![./figures/test_convexity_1.png]
-![./figures/test_convexity_2.png]
+![](./figures/test_convexity_0.png)
+![](./figures/test_convexity_1.png)
+![](./figures/test_convexity_2.png)
