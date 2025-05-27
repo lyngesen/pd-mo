@@ -1,5 +1,7 @@
 # Pareto Front convexity measure
 
+NOTE: We consider bi-objective maximization problems.
+
 Given a discrete Pareto Front $\mathcal{Y}_N \subset \mathbb{R}^2$ we define two polygons $P^I$ and $P^N$ using the reference points $y^I$ (ideal point) and $y^N$ (Nadir point) as follows:
 - $P^I = \bigcup_{y \in \mathcal{Y}_N} Box(y, y^I)$
 - $P^N = \bigcup_{y \in \mathcal{Y}_N} Box(y^N, y)$
