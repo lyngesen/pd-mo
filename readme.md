@@ -5,8 +5,9 @@ Given a discrete Pareto Front $\mathcal{Y}_N \subset \mathbb{R}^2$ we define two
 - $P^N = \bigcup_{y \in \mathcal{Y}_N} Box(y^N, y)$
 
 We define the convexity measures: $M^I$ as the area of $P^I$ divided by the area of $conv(M^I)$ and $M^N$ as the area of $M^N$ divided by the area of $conv(M^N)$.
+$M^N$ small implies convexity $\Leftrightarrow$ $M^N$ large implies concavity. $M^I$ small implies concavity $\Leftrightarrow$ $M^I$ large implies convexity. Ratio M^I/M^N.
 
-We combine these to a single measure $M = M^I + 1-M^N$
+We combine these to a single measure $M = \frac{M^I + (1-M^N)}{2}$ where $1$ indicates convexity and $0$ indicates concavity.
 
 # Usage
 

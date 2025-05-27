@@ -62,7 +62,7 @@ def convexity_measure(Y, figname : str = ''):
 
         P.axs[0,2].set_title(f'difference {M_N:.2f} = $M^N$')
         P.axs[1,2].set_title(f'difference {M_I:.2f} = $M^I$')
-        P.axs[1,1].set_xlabel("$M^N$ small implies convexity $\Leftrightarrow$ $M^N$ large imples convavity \n $M^I$ small implies convavity $\Leftrightarrow$ $M^I$ large implies convexity \n Ratio $M^I/M^N=" + f"{M_I/M_N:.2f}$ \n" + "$(1-M^N)/2 + M^I/2 = $" + f"{(1-M_N)/2 + M_I/2:.2f}" + "$((M^I) + (1-M^N))/2=$"+ f"{M_I/2 + (1-M_N)/2:.2f}$")
+        P.axs[1,1].set_xlabel(f"Ration M^I/M^N = {M_I/M_N:.2f}$ \n" + "$(1-M^N)/2 + M^I/2 = $" + f"{(1-M_N)/2 + M_I/2:.2f}" + "$((M^I) + (1-M^N))/2=$"+ f"{M_I/2 + (1-M_N)/2:.2f}$")
         # P.fig.savefig(f'docs/figures/tests/convexity_measure/measure_id{figname}.pdf')
 
         P.fig.savefig(figname)
