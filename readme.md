@@ -24,3 +24,5 @@ See the file `main.py` on how to call the Pareto Measure. To get the measure $M 
 ![](./figures/test_convexity_0.png)
 ![](./figures/test_convexity_1.png)
 ![](./figures/test_convexity_2.png)
+![](./figures/test_convexity_3.png)
+![](./figures/test_convexity_4.png)
