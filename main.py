@@ -37,6 +37,13 @@ def calculate_M_N_with_plot():
     with open('convexity_measure_results.json', 'w') as f:
         json.dump(result_dict, f, indent=4)
 
+
+def update_readme_with_results():
+
+    # read results from json file
+    with open('convexity_measure_results.json', 'r') as f:
+        result_dict = json.load(f)
+
     # add to readme.md file
     search_string = "<!---RESULT_TABLE-->"
 
@@ -53,6 +60,8 @@ def calculate_M_N_with_plot():
     with open('README.md', 'w') as f:
         f.writelines(lines_out)
 
+
+    # TODO: ADD hypervolume measure as column
 if __name__ == "__main__":
 
     Y_list = []
@@ -87,4 +96,5 @@ if __name__ == "__main__":
     # test_convex_hull()
 
     calculate_M_N_with_plot()
+    update_readme_with_results()
 
