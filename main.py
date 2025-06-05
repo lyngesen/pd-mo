@@ -47,7 +47,7 @@ def calculate_M_N_with_plot():
         
     for key, value in result_dict.items():
         # format <tr><td><img src="figures/Y_0_plot.png"></td><td>1</td><td>2</td></tr>
-        lines_out.append(f'\n<tr><td><img src="{value["filename"]}"></td><td>{value["M_N"]:.2f}</td><td>{value["M"]:.2f}</td></tr>')
+        lines_out.append(f'\n<tr><td><img src="{value["filename"]}"></td><td>{1-value["M_N"]:.2f}</td><td>{value["M"]:.2f}</td></tr>')
 
     lines_out.append("</table>")
     with open('README.md', 'w') as f:
