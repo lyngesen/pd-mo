@@ -1,3 +1,12 @@
+# ignore files in instances/s
+
+/instances/subproblems_local_sets/*
+# except for the following files
+!/instances/subproblems_local_sets/sp-2-10-l_1.json
+!/instances/subproblems_local_sets/sp-2-100-l_1.json
+!/instances/subproblems_local_sets/sp-2-100-u_1.json
+!/instances/subproblems_local_sets/sp-2-100-m_1.json
+
 # mac Ds_store files
 *.DS_Store
 

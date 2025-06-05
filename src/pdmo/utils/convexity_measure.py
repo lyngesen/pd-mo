@@ -1,5 +1,25 @@
 from src.pdmo.classes.plotter import Plotter
 
+def get_M_N_measure(Y):
+    ''' Calculate the convexity measure of a set of points Y.
+    args:
+    Y (PointList): A list of points.
+    returns:
+    M_N (float): The convexity measure for the nadir reference point.
+    '''
+    ref = Y.get_nadir() # use nadir reference point
+    conv = Y._convex_hull_with_ref(ref=ref) # calculate the convex hull of the Pareto Front with the nadir reference point
+
+    # this is the reference shape defined by the union of boxes between points of Y and the reference point
+    hypervolume_shape = Y._hypervolume_shape(ref=ref)
+    # calculate the difference between the convex hull and the hypervolume shape
+    difference = conv.difference(hypervolume_shape)
+    T = conv.area # for normalization
+
+    M_N = difference.area/T # normalize the area of the difference by the area of the convex hull
+
+    return M_N
+
 def convexity_measure(Y, figname : str = ''):
     ''' Calculate the convexity measure of a set of points Y.
     args:
