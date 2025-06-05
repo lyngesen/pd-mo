@@ -7,7 +7,7 @@ def get_M_N_measure(Y):
     returns:
     M_N (float): The convexity measure for the nadir reference point.
     '''
-    ref = Y.get_nadir() # use nadir reference point
+    ref = Y.get_ideal() # use nadir reference point
     conv = Y._convex_hull_with_ref(ref=ref) # calculate the convex hull of the Pareto Front with the nadir reference point
 
     # this is the reference shape defined by the union of boxes between points of Y and the reference point

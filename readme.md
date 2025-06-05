@@ -42,14 +42,14 @@ See the file `main.py` on how to call the Pareto Measure. To get the measure $M 
 <tr><th>Y</th><th>M</th><td> M^n </th></tr>
 <!---RESULT_TABLE-->
 
-<tr><td><img src="figures/Y_0_plot.png"></td><td>0.52</td><td>0.74</td></tr>
-<tr><td><img src="figures/Y_1_plot.png"></td><td>0.40</td><td>0.66</td></tr>
-<tr><td><img src="figures/Y_2_plot.png"></td><td>0.21</td><td>0.25</td></tr>
-<tr><td><img src="figures/Y_3_plot.png"></td><td>0.01</td><td>0.23</td></tr>
-<tr><td><img src="figures/Y_4_plot.png"></td><td>0.58</td><td>0.79</td></tr>
-<tr><td><img src="figures/Y_5_plot.png"></td><td>0.02</td><td>0.44</td></tr>
+<tr><td><img src="figures/Y_0_plot.png"></td><td>0.04</td><td>0.74</td></tr>
+<tr><td><img src="figures/Y_1_plot.png"></td><td>0.08</td><td>0.66</td></tr>
+<tr><td><img src="figures/Y_2_plot.png"></td><td>0.72</td><td>0.25</td></tr>
+<tr><td><img src="figures/Y_3_plot.png"></td><td>0.56</td><td>0.23</td></tr>
+<tr><td><img src="figures/Y_4_plot.png"></td><td>0.01</td><td>0.79</td></tr>
+<tr><td><img src="figures/Y_5_plot.png"></td><td>0.14</td><td>0.44</td></tr>
 <tr><td><img src="figures/Y_6_plot.png"></td><td>0.05</td><td>0.50</td></tr>
-<tr><td><img src="figures/Y_7_plot.png"></td><td>0.11</td><td>0.47</td></tr>
-<tr><td><img src="figures/Y_8_plot.png"></td><td>0.17</td><td>0.53</td></tr>
-<tr><td><img src="figures/Y_9_plot.png"></td><td>0.61</td><td>0.79</td></tr>
-<tr><td><img src="figures/Y_10_plot.png"></td><td>0.03</td><td>0.21</td></tr></table>
+<tr><td><img src="figures/Y_7_plot.png"></td><td>0.17</td><td>0.47</td></tr>
+<tr><td><img src="figures/Y_8_plot.png"></td><td>0.11</td><td>0.53</td></tr>
+<tr><td><img src="figures/Y_9_plot.png"></td><td>0.03</td><td>0.79</td></tr>
+<tr><td><img src="figures/Y_10_plot.png"></td><td>0.61</td><td>0.21</td></tr></table>
