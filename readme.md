@@ -39,7 +39,7 @@ See the file `main.py` on how to call the Pareto Measure. To get the measure $M 
 # Result Table
 
 <table style="width:400px;background-color">
-<tr><th>Y</th><th>M</th><td> M^n </th></tr>
+<tr><th>Y</th><th>M^n</th><td> M </th></tr>
 <!---RESULT_TABLE-->
 
 <tr><td><img src="figures/Y_0_plot.png"></td><td>0.04</td><td>0.74</td></tr>
