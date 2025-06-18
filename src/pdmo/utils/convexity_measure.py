@@ -1,5 +1,17 @@
 from src.pdmo.classes.plotter import Plotter
 
+def get_relative_hypervolume(Y, ref = 'ideal'):
+    nadir = Y.get_nadir()
+    ideal = Y.get_ideal()
+    
+    entire_area = (nadir[0] - ideal[0]) * (nadir[1] - ideal[1])
+
+    ref = Y.get_ideal() if ref == 'ideal' else Y.get_nadir()
+    hypervolume = Y._hypervolume_shape(ref=ref).area
+
+    return hypervolume / entire_area
+
+
 def get_M_N_measure(Y):
     ''' Calculate the convexity measure of a set of points Y.
     args:

@@ -5,7 +5,7 @@ import json
 
 # local imports
 from src.pdmo.classes.pointclass import PointList, Point
-from src.pdmo.utils.convexity_measure import convexity_measure, get_M_N_measure
+from src.pdmo.utils.convexity_measure import convexity_measure, get_M_N_measure, get_relative_hypervolume
 
 
 def test_convex_hull():
@@ -27,12 +27,16 @@ def calculate_M_N_with_plot():
         fig, ax = plt.subplots(figsize=(4, 2))
         filename = f'figures/Y_{i}_plot.png'
         Y.plot(ax=ax, color='black',marker='o')
+        ax.set_xticks([])
+        ax.set_yticks([])
         fig.savefig(filename)
         M_N = get_M_N_measure(Y)
         M = convexity_measure(Y)
+        relative_hypervolume = get_relative_hypervolume(Y)
+
         print(f"Convexity measure M_N for $Y^{i}$: {M_N:.2f}")
         print(f"Convexity measure M for $Y^{i}$: {M_N:.2f}")
-        result_dict[f'Y_{i}'] = {'M_N': M_N, 'M': M, 'filename': filename}
+        result_dict[f'Y_{i}'] = {'M_N': M_N, 'M': M,'HPV':relative_hypervolume, 'filename': filename}
 
     with open('convexity_measure_results.json', 'w') as f:
         json.dump(result_dict, f, indent=4)
@@ -54,14 +58,14 @@ def update_readme_with_results():
         
     for key, value in result_dict.items():
         # format <tr><td><img src="figures/Y_0_plot.png"></td><td>1</td><td>2</td></tr>
-        lines_out.append(f'\n<tr><td><img src="{value["filename"]}"></td><td>{1-value["M_N"]:.2f}</td><td>{value["M"]:.2f}</td></tr>')
+        lines_out.append(f'\n<tr><td><img src="{value["filename"]}"></td><td>{1-value["M_N"]:.2f}</td><td>{value["M"]:.2f}</td><td>{value["HPV"]:.2f}</td></tr>')
 
     lines_out.append("</table>")
     with open('README.md', 'w') as f:
         f.writelines(lines_out)
 
 
-    # TODO: ADD hypervolume measure as column
+# TODO: ADD hypervolume measure as column
 if __name__ == "__main__":
 
     Y_list = []
