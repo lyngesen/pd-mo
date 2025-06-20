@@ -39,17 +39,17 @@ See the file `main.py` on how to call the Pareto Measure. To get the measure $M 
 # Result Table
 
 <table style="width:900px;background-color">
-<tr><th>Y</th><th>1-M^n</th><td> M </th><td> Hypervolume </th></tr>
+<tr><th>Y</th><th>1-M^n</th><td> M </th><th> Hypervolume </th><th> |Y| </th></tr>
 <!---RESULT_TABLE-->
 
-<tr><td><img src="figures/Y_0_plot.png"></td><td>0.96</td><td>0.74</td><td>0.74</td></tr>
-<tr><td><img src="figures/Y_1_plot.png"></td><td>0.92</td><td>0.66</td><td>0.66</td></tr>
-<tr><td><img src="figures/Y_2_plot.png"></td><td>0.28</td><td>0.25</td><td>0.14</td></tr>
-<tr><td><img src="figures/Y_3_plot.png"></td><td>0.44</td><td>0.23</td><td>0.22</td></tr>
-<tr><td><img src="figures/Y_4_plot.png"></td><td>0.99</td><td>0.79</td><td>0.78</td></tr>
-<tr><td><img src="figures/Y_5_plot.png"></td><td>0.86</td><td>0.44</td><td>0.43</td></tr>
-<tr><td><img src="figures/Y_6_plot.png"></td><td>0.95</td><td>0.50</td><td>0.47</td></tr>
-<tr><td><img src="figures/Y_7_plot.png"></td><td>0.83</td><td>0.47</td><td>0.50</td></tr>
-<tr><td><img src="figures/Y_8_plot.png"></td><td>0.89</td><td>0.53</td><td>0.45</td></tr>
-<tr><td><img src="figures/Y_9_plot.png"></td><td>0.97</td><td>0.79</td><td>0.76</td></tr>
-<tr><td><img src="figures/Y_10_plot.png"></td><td>0.39</td><td>0.21</td><td>0.19</td></tr></table>
+<tr><td><img src="figures/Y_0_plot.png"></td><td>0.96</td><td>0.74</td><td>0.74</td><td>57</td></tr>
+<tr><td><img src="figures/Y_1_plot.png"></td><td>0.92</td><td>0.66</td><td>0.66</td><td>20</td></tr>
+<tr><td><img src="figures/Y_2_plot.png"></td><td>0.28</td><td>0.25</td><td>0.14</td><td>10</td></tr>
+<tr><td><img src="figures/Y_3_plot.png"></td><td>0.44</td><td>0.23</td><td>0.22</td><td>100</td></tr>
+<tr><td><img src="figures/Y_4_plot.png"></td><td>0.99</td><td>0.79</td><td>0.78</td><td>100</td></tr>
+<tr><td><img src="figures/Y_5_plot.png"></td><td>0.86</td><td>0.44</td><td>0.43</td><td>100</td></tr>
+<tr><td><img src="figures/Y_6_plot.png"></td><td>0.95</td><td>0.50</td><td>0.47</td><td>20</td></tr>
+<tr><td><img src="figures/Y_7_plot.png"></td><td>0.83</td><td>0.47</td><td>0.50</td><td>17</td></tr>
+<tr><td><img src="figures/Y_8_plot.png"></td><td>0.89</td><td>0.53</td><td>0.45</td><td>17</td></tr>
+<tr><td><img src="figures/Y_9_plot.png"></td><td>0.97</td><td>0.79</td><td>0.76</td><td>20</td></tr>
+<tr><td><img src="figures/Y_10_plot.png"></td><td>0.39</td><td>0.21</td><td>0.19</td><td>20</td></tr></table>
